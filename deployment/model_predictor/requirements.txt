@@ -1,0 +1,9 @@
+mlflow==2.3.2
+fastapi==0.95.1
+PyYAML==6.0
+uvicorn==0.22.0
+xgboost==1.7.5
+scikit-learn
+pyarrow==11.0.0
+scipy==1.11.1
+catboost==1.2
