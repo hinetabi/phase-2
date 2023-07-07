@@ -21,7 +21,7 @@ This repository is the solution for MLOps Marathon 2023.
         ```bash
         data/raw_data
         ├── .gitkeep
-        └── phase-1
+        └── phase-2
             └── prob-1
                 ├── features_config.json
                 └── raw_train.parquet
@@ -30,7 +30,7 @@ This repository is the solution for MLOps Marathon 2023.
     -   Process data
 
         ```bash
-        python src/raw_data_processor.py --phase-id phase-1 --prob-id prob-1
+        python src/raw_data_processor.py --phase-id phase-2 --prob-id prob-1
         ```
 
     -   After processing data, `./data/train_data` dir should look like
@@ -38,7 +38,7 @@ This repository is the solution for MLOps Marathon 2023.
         ```bash
         data/train_data
         ├── .gitkeep
-        └── phase-1
+        └── phase-2
             └── prob-1
                 ├── category_index.pickle
                 ├── test_x.parquet
