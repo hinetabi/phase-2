@@ -95,7 +95,7 @@ This repository is the solution for MLOps Marathon 2023.
         ```bash
          data/captured_data
          ├── .gitkeep
-         └── phase-1
+         └── phase-2
              └── prob-1
                  ├── 123.parquet
                  └── 456.parquet
@@ -107,7 +107,7 @@ This repository is the solution for MLOps Marathon 2023.
     -   Label the captured data, taking around 3 minutes
 
         ```bash
-        python src/label_captured_data.py --phase-id phase-1 --prob-id prob-1
+        python src/label_captured_data.py --phase-id phase-2 --prob-id prob-1
         ```
 
     -   After label the captured data, `./data/captured_data` dir should look like:
@@ -128,7 +128,7 @@ This repository is the solution for MLOps Marathon 2023.
 
         ```bash
         export MLFLOW_TRACKING_URI=http://localhost:5000
-        python src/model_trainer.py --phase-id phase-1 --prob-id prob-1 --add-captured-data true
+        python src/model_trainer.py --phase-id phase-2 --prob-id prob-1 --add-captured-data true
         ```
 
     -   Register model: Go to mlflow UI at <http://localhost:5000> and register model using the existing name **phase-2_prob-1_model-1**. The latest model version now should be `2`.
