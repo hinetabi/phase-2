@@ -136,5 +136,5 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    prob_config = get_prob_config("phase-1", "prob-1", args.final_model)
+    prob_config = get_prob_config("phase-2", "prob-1", args.final_model)
     RawDataProcessor.process_raw_data(prob_config)
