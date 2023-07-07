@@ -61,7 +61,7 @@ This repository is the solution for MLOps Marathon 2023.
 
 3.  Deploy model predictor
 
-    -   Create model config at `data/model_config/phase-1/prob-1/model-1.yaml` with content:
+    -   Create model config at `data/model_config/phase-2/prob-1/model-1.yaml` with content:
 
         ```yaml
         phase_id: "phase-2"
